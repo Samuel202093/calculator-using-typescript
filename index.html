@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Design</title>
+</head>
+<body>
+        <h2>Calculator in Typescript</h2>
+    <div class="container">
+        <div class="output-container">
+            <input type="text" id="output" readonly>
+        </div>
+
+        <div class="wrapper">
+            <div class="span-wrapper">
+                <span onclick="handleClear()">AC</span>
+                <span onclick="handlePercentage('%')">%</span>
+                <span onclick="handleSign('-')">+/-</span>
+                <span class="span-orange" onclick="handleOperator('/')">/</span>
+            </div>
+
+            <div class="span-wrapper">
+                <span class="span-black-shade" onclick="handleNumber('7')">7</span>
+                <span class="span-black-shade" onclick="handleNumber('8')">8</span>
+                <span class="span-black-shade" onclick="handleNumber('9')">9</span>
+                <span class="span-orange" onclick="handleOperator('*')">x</span>
+            </div>
+
+            <div class="span-wrapper">
+                <span class="span-black-shade" onclick="handleNumber('4')">4</span>
+                <span class="span-black-shade" onclick="handleNumber('5')">5</span>
+                <span class="span-black-shade" onclick="handleNumber('6')">6</span>
+                <span class="span-orange" onclick="handleOperator('-')">-</span>
+            </div>
+
+            <div class="span-wrapper">
+                <span class="span-black-shade" onclick="handleNumber('1')">1</span>
+                <span class="span-black-shade" onclick="handleNumber('2')">2</span>
+                <span class="span-black-shade" onclick="handleNumber('3')">3</span>
+                <span class="span-orange" onclick="handleOperator('+')">+</span>
+            </div>
+
+            <div class="span-wrapper">
+                <span class="span-black-shade" onclick="handleNumber('0')">0</span>
+                <span class="span-black-shade" onclick="handleNumber('.')">.</span>
+                <span class="span-black-shade hide"></span>
+                <span class="span-orange" onclick="handleCalculation()">=</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/index.js"></script>
+</body>
+</html>
